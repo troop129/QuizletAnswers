@@ -1,7 +1,7 @@
 # Quizlet Explanations Unlocker
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?style=flat-square&logo=appveyor)](https://github.com/troop129/QuizletAnswers/blob/master/LICENSE)
-[![Size](https://img.shields.io/github/languages/code-size/troop129/QuizletAnswers?style=flat-square&logo=appveyor]()
+[![Size](https://img.shields.io/github/languages/code-size/troop129/QuizletAnswers?style=flat-square&logo=appveyor)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
