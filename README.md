@@ -18,7 +18,7 @@ For now, this is a Tampermonkey script that will run in the browser. In order to
 
 After installing Tampermonkey, a new tab will open. You can click out of that. 
 
-The easiest way to install the script is to copy and paste the script from this repo into Tampermonkey. You can also drag and drop it if you download it directly from the repo, the file is named["Quizlet Answers.user.js"](https://github.com/troop129/QuizletAnswers/blob/main/Quizlet%20Editor.user.js). 
+The easiest way to install the script is to copy and paste the script from this repo into Tampermonkey. You can also drag and drop it if you download it directly from the repo, the file is named ["Quizlet Answers.user.js"](https://github.com/troop129/QuizletAnswers/blob/main/Quizlet%20Editor.user.js). 
 
 ```javascript
 // ==UserScript==
