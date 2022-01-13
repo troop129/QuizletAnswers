@@ -1,7 +1,7 @@
 # Quizlet Explanations Unlocker
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-[![GitHub Release](https://img.shields.io/github/release/tterb/PlayMusic.svg?style=flat)]()  
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/troop129/QuizletAnswers/blob/master/LICENSEs)
+[![GitHub Release](https://img.shields.io/github/release/troop129/QuizletAnswers?style=flat)]()  
 
 
 Ever since Quizlet bought Slader and locked the community-made answers behind a paywall, thousands of high school students have been unable to access the files they need to complete their homework. In order to remedy this situation, I have created a simple Tampermonkey script that will bypass the paywall in an account that is not logged in.
