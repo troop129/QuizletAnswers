@@ -4,6 +4,7 @@
 ![Size](https://img.shields.io/github/languages/code-size/troop129/QuizletAnswers?style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![GreasyFork](https://img.shields.io/badge/dynamic/json?color=%23FF0000&label=GF%20Version&query=%24.version&url=https%3A%2F%2Fuserscripts-mk1a5wi451zu.runkit.sh%2Fgreasyfork%2F438663?style=for-the-badge&logo=html5&logoColor=white)
 
 
 Ever since Quizlet bought Slader and locked the community-made answers behind a paywall, thousands of high school students have been unable to access the files they need to complete their homework. In order to remedy this situation, I have created a simple Tampermonkey script that will bypass the paywall in an account that is not logged in.
