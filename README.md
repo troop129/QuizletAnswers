@@ -18,6 +18,8 @@ For now, this is a Tampermonkey script that will run in the browser. In order to
 
 After installing Tampermonkey, a new tab will open. You can click out of that. 
 
+If you already have Tampermonkey, install this script from [Greasyfork](https://greasyfork.org/en/scripts/438663-quizlet-explanations-unlocker).
+
 The easiest way to install the script is to copy and paste the script from this repo into Tampermonkey. You can also drag and drop it if you download it directly from the repo, the file is named ["Quizlet Answers.user.js"](https://github.com/troop129/QuizletAnswers/blob/main/Quizlet%20Editor.user.js). 
 
 ```javascript
