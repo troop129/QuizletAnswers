@@ -14,6 +14,7 @@ window.addEventListener('load', function() {
     var paywall = document.getElementsByClassName('wugyavo');
     if(paywall.length != 0){
         paywall[0].remove();
-        document.getElementsByClassName('hs7m9cv s1oluvjw')[0].style.overflow="scroll";
+        document.getElementsByClassName('ExplanationSolutionsContainer hnqbbas s1oluvjw')[0].style.overflow="visible";
     }
+    // document.getElementsByClassName('SiteFooter')[0].remove();
 }, false);
