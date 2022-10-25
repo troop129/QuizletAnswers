@@ -28,19 +28,20 @@ The easiest way to install the script is to copy and paste the script from this 
 // @name         Quizlet Editor
 // @match        http*://www.quizlet.com/explanations/textbook-solutions/*
 // @match        http*://quizlet.com/explanations/textbook-solutions/*
-// @version      0.1
+// @version      0.2
 // @description  Remove paywall for Quizlet answers
-// @author       troop129
+// @author       troop129 + josephyooo
 // @grant        none
 // @run-at  document-end
 // ==/UserScript==
-
 window.addEventListener('load', function() {
     'use strict';
     var paywall = document.getElementsByClassName('wugyavo');
     if(paywall.length != 0){
         paywall[0].remove();
-        document.getElementsByClassName('hs7m9cv s1oluvjw')[0].style.overflow="scroll";
+        document.getElementsByClassName('ExplanationSolutionsContainer hnqbbas s1oluvjw')[0].style.overflow="visible";
+        let newHeight = document.getElementsByClassName('ExplanationsSolutionCard c5ngj6s')[0].offsetHeight;
+        document.getElementsByClassName('mv7e89c')[0].style.minHeight=newHeight+"px";
     }
 }, false);
 ```
@@ -76,17 +77,28 @@ What remains is the snippet of answer (now helpfully unblurred) but most likely 
 
 In order to solve this, we can add some styling to the `hs7m9cv s1oluvjw` tag, which contains the answer. This will allow it to scroll and although it is not visually pleasing, it is functional.
 ```javascript
-document.getElementsByClassName('hs7m9cv s1oluvjw')[0].style.overflow="scroll";
+document.getElementsByClassName('ExplanationSolutionsContainer hnqbbas s1oluvjw')[0].style.overflow="visible";
 ```
-As you can see, the script appends the `overflow:scroll` tag. What would be more pleasing to the eye and look better is to delete the `max-height` property, which would free the constraints of the box and not need the overflow.
+As you can see, the script appends the `overflow:visible` tag. This makes the box free from being cut off and we can see all of it rendered at once. This does cut off some of the text below it, so it needs a bit of logic to fix that.
+```javascript
+let newHeight = document.getElementsByClassName('ExplanationsSolutionCard c5ngj6s')[0].offsetHeight;
+document.getElementsByClassName('mv7e89c')[0].style.minHeight=newHeight+"px";
+```
+This finds the new height of the box and adds it to the height of the box. Still has a lot of edge case errors, but not a bad band-aid overall.
 
 ![HTML after edit](https://i.imgur.com/064JBUU.png)
 
+## Issues
+Still cuts off the buttons below the answers some times. Also sometimes has too much space taken up.
+
 ## Next Steps
-I would like to implement the previously discussed `max-height` fix, as well as drop the Tampermonkey requirement in support of a fully custom chrome extension. If you would like to help with this, feel free to reach out. 
+I would like to spend more than 5 minutes on reorganizing the page to fit the new visible answer, it does need some reoganizing.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 [MIT](https://github.com/troop129/QuizletAnswers/blob/main/LICENSE)
+
+## Changelog
+- 10/24/2022: v0.2 - Updating to working again, make overflow visible instead of scroll.
