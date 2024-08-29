@@ -6,6 +6,15 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 [![GreasyFork](https://img.shields.io/badge/Install-Greasy%20Fork-red?style=for-the-badge)](https://greasyfork.org/en/scripts/438663-quizlet-explanations-unlocker)
 
+# THIS PROJECT HAS BEEN DEPRECATED
+On the advent of each new school year comes a new set of aspiring students wishing to take advantage of this script. I admire your agency, but unfortunately, Quizlet has improved their security measures to prevent this very workaround. They now use randomly generated placeholder text in order to provide an appearance of answers, rather than ship the entire answers in the packet and mask it. This script no longer works because of it. I have no plans to update it, primarily because I have no use for Quizlet anymore. 
+
+I only advise you fellow students to spend the effort either actually learning the material, or poke around on websites and find your own fun projects. I am never one to discourage learning.
+
+Good luck in your academic journeys.
+
+
+# OLD README FOR GIGGLES STILL BELOW
 
 Ever since Quizlet bought Slader and locked the community-made answers behind a paywall, thousands of high school students have been unable to access the files they need to complete their homework. In order to remedy this situation, I have created a simple Tampermonkey script that will bypass the paywall in an account that is not logged in.
 
